@@ -1,7 +1,15 @@
 import logo from "./logo.svg";
 import "./App.scss";
-
+import MyComponent from "./example/MyComponent";
+/*
+JSX -> return block
+2 components: 
+- class components -> dùng render(){}
+- function component (function, arrow) -> dùng return
+ */
+// const App = () =>{}
 function App() {
+  // JSX
   return (
     <div className="App">
       <header className="App-header">
@@ -15,6 +23,7 @@ function App() {
         >
           Learn React
         </a>
+        <MyComponent />
       </header>
     </div>
   );

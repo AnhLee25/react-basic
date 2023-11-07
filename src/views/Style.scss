@@ -1,0 +1,45 @@
+.btn {
+    box-shadow: none;
+    width: 80px;
+    height: 30px;
+    background-color: #61DAFB;
+    border-radius: 4px;
+    border-color: white;
+}
+.btn__show {
+    color: white;
+}
+.btn__delete {
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border: none;
+    color: aliceblue;
+    background-color: red;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+.btn__edit{
+    text-align: center;
+    width: fit-content;
+    height: 25px;
+    border: none;
+    color: aliceblue;
+    background-color: rgb(152, 239, 21);
+    border-radius: 3px;
+    margin-right: 20px;
+}
+.text-align-left{
+    text-align: left;
+}
+.item {
+
+    border-top: white solid 2px;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.list__friend{
+    width: 400px;
+}

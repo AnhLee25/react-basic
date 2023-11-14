@@ -3,11 +3,34 @@ import ReactDOM from "react-dom/client";
 import App from "./views/App";
 import "./styles/global.scss";
 import reportWebVitals from "./reportWebVitals";
-
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  ThemeContext,
+  ThemeProvider,
+} from "./views/hook-tutorial/ThemeContext";
+const router = createBrowserRouter([
+  {
+    path: "*",
+    element: <App />,
+  },
+]);
+// function emitMessage(id) {
+//   setInterval(() => {
+//     window.dispatchEvent(
+//       new CustomEvent(`lesson ${id}`, { detail: `Comment on lesson ${id}` })
+//     );
+//   }, 2000);
+// }
+// emitMessage(1);
+// emitMessage(2);
+// emitMessage(3);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <RouterProvider router={router} /> */}
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </React.StrictMode>
 );
 

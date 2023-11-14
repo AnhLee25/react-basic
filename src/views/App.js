@@ -1,31 +1,41 @@
-import logo from "./logo.svg";
+// import logo from "./logo.svg";
 import "./App.scss";
-import MyComponent from "./example/MyComponent";
+// import MyComponent from "./example/MyComponent";
+// import NavBar from "./nav/NavBar";
+// import Home from "./home/Home";
+// import TicTacToe from "./tic-tac-toe/TicTacToe";
+// import { Route, BrowserRouter, Routes } from "react-router-dom";
+import HookPractice from "./hook-tutorial/HookPractice";
+import HookUseReducer from "./hook-tutorial/HookUseReducer";
+import { useState } from "react";
+import HookUseContext from "./hook-tutorial/HookUseContext";
 /*
 JSX -> return block
 2 components: 
 - class components -> dùng render(){}
 - function component (function, arrow) -> dùng return
  */
-// const App = () =>{}
+
 function App() {
-  // JSX
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello bro</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <MyComponent />
-      </header>
-    </div>
+    // <BrowserRouter>
+    //   <div className="App">
+    //     <NavBar />
+
+    //     <header className="App-header">
+    //       <img src={logo} className="App-logo" alt="logo" />
+    //       <p>Hello React</p>
+    //       <Routes>
+    //         <Route path="/home" element={<Home />} />
+    //         <Route path="/friends" element={<MyComponent />} />
+    //         <Route path="/game" element={<TicTacToe />} />
+    //       </Routes>
+    //     </header>
+
+    //     <footer></footer>
+    //   </div>
+    // </BrowserRouter>
+    <HookUseContext />
   );
 }
 
